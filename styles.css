@@ -163,7 +163,7 @@ a{
 }
 
 .btn{
-    background-color: cyan;
+    background-color: #227093;
     border: none;
     color: #fff;
     padding: 20px;
@@ -219,3 +219,126 @@ a{
     padding: 3rem;
     background: white;
 }
+
+/* Contact Me */
+
+.content{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5rem;
+    background: #333;
+}
+
+.logo{
+    text-align: center;
+    font-size: 3rem;
+}
+
+.logo span{
+    color: #227093;
+}
+
+.contact-wrapper{
+    box-shadow: 0 0 20px 0 rgba(255,255,255,.3);
+    color: #fff;
+}
+.contact-wrapper > *{
+    padding: 1rem;
+}
+
+.contact-form{
+    background: #222222;
+}
+
+.contact-form form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form .block {
+    grid-column: 1/3;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1rem;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus{
+    background: #227093;
+    color:#fff;
+    transition: background-color 1s ease-in ease-in-out;
+    outline: 0;
+}
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea{
+   width: 100%; 
+   padding: 0.7rem;
+   border: none;
+   background: none;
+   outline: 0;
+   color: #fff;
+   border-bottom: 1px solid #227093;
+}
+
+.contact-form form button{
+    background: #227093;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+.contact-info{
+    background: #227093;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contact-info ul{
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li{
+    padding: 0.3rem;
+    color: #000;
+}
+
+.contact-info ul a svg{
+    width: 50px;
+    height: 80px;
+}
+
+@media (min-width: 700px){
+   .content{
+       padding: 0 4rem;
+   }
+
+   .contact-wrapper{
+       display: grid;
+       grid-template-columns: 2fr 1fr;
+   }
+
+   .contact-wrapper > * {
+       padding: 2rem;
+   }
+
+   .contact-info h4,
+   .contact-info ul,
+   .contact-info p{
+       padding: 1rem;
+       text-align: left;
+   }
+
+
+}
+
