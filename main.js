@@ -51,3 +51,31 @@ function Datos(){
     }
 
 }
+
+// Contact Me
+
+const Submit = document.getElementById('submit');
+const Name = document.getElementById('name');
+const Email = document.getElementById('email');
+const Phone = document.getElementById('phone');
+const Affair = document.getElementById('affair');
+const Message = document.getElementById('message');
+
+function sConsole(){
+    event.preventDefault();
+    var data = Name;
+    console.log(data.value)
+    var data = Email;
+    console.log(data.value)
+    var data = Phone;
+    console.log(data.value)
+    var data = Affair;
+    console.log(data.value)
+    var data = Message;
+    console.log(data.value)
+}
+
+Submit.onclick = function(){
+    sConsole();
+    alert('Su mensaje ha sido enviado')
+}
